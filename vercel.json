@@ -1,0 +1,13 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "html": {
+    "cleanUrls": true
+  },
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/about", "dest": "/about.html" },
+    { "src": "/terms", "dest": "/terms.html" },
+    { "src": "/privacy", "dest": "/privacy.html" }
+  ]
+} 

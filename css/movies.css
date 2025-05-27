@@ -441,7 +441,7 @@
 
   .modal-content p {
     font-size: 1.15rem;
-  }
+}
 
   .modal-title {
     font-size: 1.8rem;
@@ -449,8 +449,8 @@
 
   .modal-description {
     font-size: 1.1rem;
-    line-height: 1.7;
-  }
+  line-height: 1.7;
+}
 }
 
 @media (max-width: 480px) {
