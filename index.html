@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreamVault - Your Movie Library</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <a href="index.html">
+        <img src="./assests/logo.png" alt="StreamVault Logo">
+        <span>StreamVault</span>
+      </a>
+    </div>
+    
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav-menu">
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#trending">Trending</a></li>
+        <li><a href="#shows">Shows</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Discover Amazing Movies</h1>
+      <p>Your ultimate destination for the latest and greatest in cinema.</p>
+      <a href="#trending" class="btn-primary">Explore Trending</a>
+    </div>
+    <div class="hero-image">
+      <div class="cinema-svg">
+        <i class="fas fa-film fa-10x"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending Movies Section -->
+  <section class="trending" id="trending">
+    <div class="section-header">
+      <h2>Trending Movies</h2>
+      <p>The hottest films everyone's watching right now</p>
+    </div>
+    <div class="movie-container">
+      <div class="movie-card">
+        <img src="./assests/public/Inception.jpg" alt="Inception">
+        <div class="card-overlay">
+          <button class="watch-now">Watch Now</button>
+          <button class="details">More Details</button>
+        </div>
+        <div class="movie-info">
+          <h3>Inception</h3>
+          <p class="movie-year">2010</p>
+          <div class="movie-rating">
+            <i class="fas fa-star"></i>
+            <span>8.8</span>
+          </div>
+        </div>
+      </div>
+      <div class="movie-card">
+        <img src="./assests/public/dark.jpg" alt="The Dark Knight">
+        <div class="card-overlay">
+          <button class="watch-now">Watch Now</button>
+          <button class="details">More Details</button>
+        </div>
+        <div class="movie-info">
+          <h3>The Dark Knight</h3>
+          <p class="movie-year">2008</p>
+          <div class="movie-rating">
+            <i class="fas fa-star"></i>
+            <span>9.0</span>
+          </div>
+        </div>
+      </div>
+      <div class="movie-card">
+        <img src="./assests/public/interstellar.jpg" alt="Interstellar">
+        <div class="card-overlay">
+          <button class="watch-now">Watch Now</button>
+          <button class="details">More Details</button>
+        </div>
+        <div class="movie-info">
+          <h3>Interstellar</h3>
+          <p class="movie-year">2014</p>
+          <div class="movie-rating">
+            <i class="fas fa-star"></i>
+            <span>8.6</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Shows Section -->
+  <section class="shows" id="shows">
+    <div class="section-header">
+      <h2>Popular Shows</h2>
+      <p>Binge-worthy series you can't miss</p>
+    </div>
+    <div class="show-container">
+      <div class="show-card">
+        <img src="./assests/public/BreakingBad.jpg" alt="Breaking Bad">
+        <div class="card-overlay">
+          <button class="watch-now">Watch Now</button>
+          <button class="details">More Details</button>
+        </div>
+        <div class="show-info">
+          <h3>Breaking Bad</h3>
+          <p class="show-year">2008-2013</p>
+          <div class="show-rating">
+            <i class="fas fa-star"></i>
+            <span>9.5</span>
+          </div>
+        </div>
+      </div>
+      <div class="show-card">
+        <img src="./assests/public/StrangerThings.jpg" alt="Stranger Things">
+        <div class="card-overlay">
+          <button class="watch-now">Watch Now</button>
+          <button class="details">More Details</button>
+        </div>
+        <div class="show-info">
+          <h3>Stranger Things</h3>
+          <p class="show-year">2016-Present</p>
+          <div class="show-rating">
+            <i class="fas fa-star"></i>
+            <span>8.7</span>
+          </div>
+        </div>
+      </div>
+      <div class="show-card">
+        <img src="./assests/public/TheCrown.jpg" alt="The Crown">
+        <div class="card-overlay">
+          <button class="watch-now">Watch Now</button>
+          <button class="details">More Details</button>
+        </div>
+        <div class="show-info">
+          <h3>The Crown</h3>
+          <p class="show-year">2016-Present</p>
+          <div class="show-rating">
+            <i class="fas fa-star"></i>
+            <span>8.7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- User Reviews Section -->
+  <section class="reviews" id="reviews">
+    <div class="section-header">
+      <h2>User Reviews</h2>
+      <p>What our community is saying</p>
+    </div>
+    <div class="reviews-container">
+      <div class="review-list">
+        <div class="review-card">
+          <div class="review-header">
+            <img src="./assests/public/person.jpg" alt="User Avatar" class="review-avatar">
+            <div class="review-meta">
+              <h4>John Doe</h4>
+              <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">"Amazing movie experience! The cinematography was breathtaking and the story kept me engaged throughout."</p>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <img src="./assests/public/person2.jpg" alt="User Avatar" class="review-avatar">
+            <div class="review-meta">
+              <h4>Jane Smith</h4>
+              <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">"Great show with compelling characters. Can't wait for the next season!"</p>
+        </div>
+      </div>
+      <div class="review-form-container">
+        <h3>Share Your Thoughts</h3>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+          </div>
+          <div class="form-group">
+            <label for="review">Your Review</label>
+            <textarea id="review" name="review" placeholder="Share your thoughts about a movie or show..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Submit Review</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="terms.html" class="animate-fadeIn">Terms & Conditions</a>
+        <a href="privacy.html" class="animate-fadeIn">Privacy Policy</a>
+        <a href="about.html" class="animate-fadeIn">About Us</a>
+        <a href="about.html#contact" class="animate-fadeIn">Contact</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://github.com/Sov-ereign" target="_blank" class="animate-fadeIn"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/somenath-gorai-b12a26326" target="_blank" class="animate-fadeIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://replit.com/@somu8608" target="_blank" class="animate-fadeIn"><i class="fas fa-code"></i></a>
+        <a href="https://x.com/_Sov_ereign" target="_blank" class="animate-fadeIn"><i class="fab fa-twitter"></i></a>
+        <a href="https://portfolio-sov.vercel.app/" target="_blank" class="animate-fadeIn"><i class="fas fa-briefcase"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 StreamVault. All rights reserved.</p>
+    </div>
+    <div class="back-to-top animate-fadeIn">
+      <a href="#header"><i class="fas fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div id="watchNowModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Hey how are you doing my love? 💝</h2>
+      <p>Why don't you go and buy a netflix subscription? 😊</p>
+    </div>
+  </div>
+
+  <div id="detailsModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-details">
+        <h2 class="modal-title"></h2>
+        <div class="modal-info">
+          <p class="modal-year"></p>
+          <p class="modal-rating"></p>
+          <p class="modal-description"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu functionality
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+        navToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-list a').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Modal functionality
+    const watchNowModal = document.getElementById('watchNowModal');
+    const detailsModal = document.getElementById('detailsModal');
+    const closeButtons = document.querySelectorAll('.close-modal');
+
+    // Movie and show details data
+    const contentDetails = {
+      'Inception': {
+        year: '2010',
+        rating: '8.8',
+        description: 'A thief who steals corporate secrets through dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.'
+      },
+      'The Dark Knight': {
+        year: '2008',
+        rating: '9.0',
+        description: 'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.'
+      },
+      'Interstellar': {
+        year: '2014',
+        rating: '8.6',
+        description: 'A team of explorers travel through a wormhole in space in an attempt to ensure humanity\'s survival.'
+      },
+      'Breaking Bad': {
+        year: '2008-2013',
+        rating: '9.5',
+        description: 'A high school chemistry teacher turned methamphetamine manufacturer partners with a former student to secure his family\'s financial future as he battles terminal lung cancer.'
+      },
+      'Stranger Things': {
+        year: '2016-Present',
+        rating: '8.7',
+        description: 'When a young boy disappears, his mother, a police chief, and his friends must confront terrifying supernatural forces in order to get him back.'
+      },
+      'The Crown': {
+        year: '2016-Present',
+        rating: '8.7',
+        description: 'Follows the political rivalries and romance of Queen Elizabeth II\'s reign and the events that shaped the second half of the twentieth century.'
+      }
+    };
+
+    // Watch Now button click handler
+    document.querySelectorAll('.watch-now').forEach(button => {
+      button.addEventListener('click', () => {
+        watchNowModal.style.display = 'block';
+      });
+    });
+
+    // Details button click handler
+    document.querySelectorAll('.details').forEach(button => {
+      button.addEventListener('click', (e) => {
+        const card = e.target.closest('.movie-card, .show-card');
+        const title = card.querySelector('h3').textContent;
+        const details = contentDetails[title];
+
+        detailsModal.querySelector('.modal-title').textContent = title;
+        detailsModal.querySelector('.modal-year').textContent = `Year: ${details.year}`;
+        detailsModal.querySelector('.modal-rating').textContent = `Rating: ${details.rating}/10`;
+        detailsModal.querySelector('.modal-description').textContent = details.description;
+
+        detailsModal.style.display = 'block';
+      });
+    });
+
+    // Close modal functionality
+    closeButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        watchNowModal.style.display = 'none';
+        detailsModal.style.display = 'none';
+      });
+    });
+
+    // Close modal when clicking outside
+    window.addEventListener('click', (e) => {
+      if (e.target === watchNowModal) {
+        watchNowModal.style.display = 'none';
+      }
+      if (e.target === detailsModal) {
+        detailsModal.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

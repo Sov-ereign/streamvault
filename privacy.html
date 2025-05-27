@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - StreamVault</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <a href="index.html">
+        <img src="./assests/logo.png" alt="StreamVault Logo">
+        <span>StreamVault</span>
+      </a>
+    </div>
+    
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav-menu">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="privacy-container">
+    <h1 class="animate-fadeIn">Privacy Policy</h1>
+    <div class="privacy-content">
+      <section class="animate-slideUp">
+        <h2>1. Information Collection and Use</h2>
+        <p>We collect information that you provide directly to us, including but not limited to your name, email address, and any other information you choose to provide.</p>
+      </section>
+
+      <section class="animate-slideUp">
+        <h2>2. Data Protection</h2>
+        <p>We implement appropriate technical and organizational measures to protect your personal data against unauthorized or unlawful processing, accidental loss, destruction, or damage.</p>
+      </section>
+
+      <section class="animate-slideUp">
+        <h2>3. Data Sharing</h2>
+        <p>We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as required by law or as necessary to provide our services.</p>
+      </section>
+
+      <section class="animate-slideUp">
+        <h2>4. Your Rights</h2>
+        <p>You have the right to access, correct, or delete your personal information. You may also have the right to restrict or object to certain processing of your data.</p>
+      </section>
+
+      <section class="animate-slideUp">
+        <h2>5. Changes to Privacy Policy</h2>
+        <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page.</p>
+      </section>
+
+      <section class="animate-slideUp">
+        <h2>6. Contact Us</h2>
+        <p>If you have any questions about this privacy policy, please contact us at:</p>
+        <ul>
+          <li>Email: contact@streamvault.com</li>
+          <li>GitHub: <a href="https://github.com/Sov-ereign" class="animate-fadeIn">@Sov-ereign</a></li>
+          <li>LinkedIn: <a href="https://linkedin.com/in/somenath-gorai-b12a26326" class="animate-fadeIn">Somenath Gorai</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="terms.html" class="animate-fadeIn">Terms & Conditions</a>
+        <a href="privacy.html" class="animate-fadeIn">Privacy Policy</a>
+        <a href="about.html" class="animate-fadeIn">About Us</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://github.com/Sov-ereign" target="_blank" class="animate-fadeIn"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/somenath-gorai-b12a26326" target="_blank" class="animate-fadeIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://replit.com/@somu8608" target="_blank" class="animate-fadeIn"><i class="fas fa-code"></i></a>
+        <a href="https://x.com/_Sov_ereign" target="_blank" class="animate-fadeIn"><i class="fab fa-twitter"></i></a>
+        <a href="https://portfolio-sov.vercel.app/" target="_blank" class="animate-fadeIn"><i class="fas fa-briefcase"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 StreamVault. All rights reserved.</p>
+    </div>
+    <div class="back-to-top animate-fadeIn">
+      <a href="#header"><i class="fas fa-arrow-up"></i></a>
+    </div>
+  </footer>
+  <script>
+    // Mobile menu functionality
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+        navToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-list a').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html> 
