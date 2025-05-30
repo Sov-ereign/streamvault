@@ -26,10 +26,10 @@
 
     <div class="nav-menu">
       <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="terms.html">Terms</a></li>
-        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#trending">Movies</a></li>
+        <li><a href="#shows">Shows</a></li>
+        <li><a href="#reviews">Feedback</a></li>
       </ul>
       </div>
     </nav>
@@ -292,6 +292,25 @@
         navToggle.classList.remove('active');
         navMenu.classList.remove('active');
       });
+    });
+
+    // Navbar scroll behavior
+    let lastScrollTop = 0;
+    const navbar = document.querySelector('.navbar');
+    const scrollThreshold = 50; // Minimum scroll amount before hiding
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+        // Scrolling down
+        navbar.classList.add('hide');
+      } else {
+        // Scrolling up
+        navbar.classList.remove('hide');
+      }
+      
+      lastScrollTop = scrollTop;
     });
 
     // Modal functionality

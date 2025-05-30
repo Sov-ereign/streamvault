@@ -10,7 +10,7 @@
 </head>
 <body>
   <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="secondary-nav">
     <div class="nav-brand">
       <a href="/index.html">
         <img src="/assets/logo.png" alt="StreamVault Logo">
@@ -121,6 +121,25 @@
         navToggle.classList.remove('active');
         navMenu.classList.remove('active');
       });
+    });
+
+    // Navbar scroll behavior
+    let lastScrollTop = 0;
+    const navbar = document.querySelector('.secondary-nav');
+    const scrollThreshold = 50; // Minimum scroll amount before hiding
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+        // Scrolling down
+        navbar.classList.add('hide');
+      } else {
+        // Scrolling up
+        navbar.classList.remove('hide');
+      }
+      
+      lastScrollTop = scrollTop;
     });
   </script>
 </body>
